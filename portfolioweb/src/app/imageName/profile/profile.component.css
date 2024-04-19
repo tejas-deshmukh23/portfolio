@@ -1,0 +1,70 @@
+.container {
+    position: relative;
+  }
+  
+  .bottom-image {
+    position: relative;
+    z-index: 1; /* Ensure the bottom image is below the top image */
+    /* width: fit-content; */
+  }
+  
+  .top-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2; /* Ensure the top image is above the bottom image */
+  }
+  .container2{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    margin-top: 60px;
+    margin-left: 200px;
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+  }
+  .container3{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    margin-top: 100px;
+    margin-left: 200px;
+  }
+  .container4{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    margin-top: 100px;
+    margin-left: 280px;
+  }
+  a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .link-secondary {
+    color: white;
+}
+
+.link-secondary:hover {
+    color: blue;
+}

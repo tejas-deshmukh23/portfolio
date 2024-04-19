@@ -1,0 +1,53 @@
+<div class="container-fluid m-3 text-center">
+    <!-- This is a first main row -->
+    <div class="row justify-content-md-center">
+        <!-- This is a first column of a first row -->
+        <div class="col col-lg-3 col1">
+            <app-nav></app-nav>
+        </div>
+        <!-- This is a second column of a first row -->
+        <div class="col col-lg-8">
+            <app-profile></app-profile>
+            <div class="container text-white" style="text-align: left;">
+                <h3 style="margin-top: 20px;">projects</h3>
+            </div>
+            <!-- This is first row under First Main row -->
+            <div class="row justify-content-md-center">
+                
+                <!-- Calling Project cards from RestAPIs -->
+                @for (item of projectFromApi; track $index) {
+                    <div class="col col-lg-4">
+                        <app-card [pro]="item"></app-card>
+                    </div>
+                }
+                
+            </div>
+
+            <!-- This is second row under First row -->
+            <div class="row "><!--justify-content-md-center-->
+                <div class="container text-white" style="text-align: left;">
+                    <h3 style="margin-top: 20px;">Skills Known</h3>
+                </div>
+                <!-- Calling skills cards -->
+                    <div class="col col-lg-3">
+                        <app-s-cards></app-s-cards>
+                    </div>
+                    <div class="col col-lg-3">
+                        <app-backend-skills></app-backend-skills>
+                    </div>
+                    <div class="col col-lg-2">
+                        <app-database-skills></app-database-skills>
+                    </div>
+                
+                <!--Other Projects Sections-->
+                <div class="col col-lg-4">
+                    <h2 style="color: white;">Other Projects</h2>
+                    <!--Here we will be using the more projects component-->
+                </div>
+
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
